@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../cdc_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'cdc.c']]]
+  ['dice',['dice',['../cdc_8h.html#a6899d8478514bd284415589e58d1535b',1,'dice(int d):&#160;crap.c'],['../crap_8c.html#a6899d8478514bd284415589e58d1535b',1,'dice(int d):&#160;crap.c']]]
 ];

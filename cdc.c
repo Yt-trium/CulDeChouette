@@ -15,6 +15,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #include "color.h"
 
@@ -28,10 +29,14 @@ int main(int argc, char ** argv)
 	int score = 0;			// Score player
 	int d1, d2, d3;			// Dice 1,2,3
 	int round = 0;
+	int defi = 0;
 	
 	if(argc > 1)
 	{
-		printHelp();
+		if(strcmp(argv[1], "-h") == 0)
+			printHelp();
+		else
+			score = atoi(argv[1]);
 	}
 	
 	while(score < 343 && score > -343)
@@ -45,8 +50,6 @@ int main(int argc, char ** argv)
 		// Printing
 		printf("Dice 1 : %d\nDice 2 : %d\nDice 3 : %d\n",d1,d2,d3);
 		
-		
-		
 		if(dice(d1) && dice(d2) && dice(d3))
 		{
 			d1 -= 48;
@@ -55,29 +58,55 @@ int main(int argc, char ** argv)
 			
 			sort(&d1,&d2,&d3);
 			
-			printf("Dice 1 : %d\nDice 2 : %d\nDice 3 : %d\n",d1,d2,d3);
+			printf(CBOLD CBLU"%d - %d - %d"RESET"\n",d1,d2,d3);
 			
 			round = play(d1,d2,d3);
 		}
+		else if(d1 == '-')	// Bévue
+		{
+			if(score >= 0)
+				round = -10;
+			else
+				round = 10;
+		}
+		else if(d1 == '+')	// Grelottine
+		{
+			defi = 1;
+			round = grelottine();
+		}
+		else if(d1 == '*')	// Mise
+		{
+			defi = 1;
+			if(d2 == '*')
+				round = mise_s();
+			else if(d2 == '-')
+				round = civet();
+			else 
+				round = mise_d();
+		}
+		else if(d1 == '.')
+		{
+			printf("Set score : ");
+			scanf("%d",&score);
+		}
+		else
+		{
+			round = 0;
+			printf(CBOLD CRED"Erreur : Dés incorrecte"RESET"\n");
+		}
 		
-		score += round;
+		if(score+round > 332 && defi == 1)
+		{
+			if(score < 332)
+				score = 332;
+		}
+		else
+			score += round;
+			
+		printf(CBOLD CYEL"Score : %d"RESET"\n",score);
 	}
 	
-	printf(CBOLD CRED"----- FIN -----\n"RESET);
+	printf(CBOLD CRED"----- FIN -----"RESET"\n");
 	
 	return 0;
-}
-
-/*!
- * \brief return 0 if d is not a dice value ( d < 1 OR d > 6 )
- * \return 0 : not a dice value / 1 : dice valid value
- * \param (d : dice value)
- */
-int dice(int d)
-{
-	d -= 48;
-	if(d<1 || d>6)
-		return 0;
-	else
-		return 1;
 }

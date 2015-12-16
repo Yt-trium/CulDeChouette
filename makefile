@@ -21,7 +21,7 @@ test : all
 	./bin/cdc
 
 testhelp : all
-	./bin/cdc -help
+	./bin/cdc -h
 
 clean :
 	rm *.o

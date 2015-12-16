@@ -14,7 +14,13 @@
  */
 void printHelp()
 {
-	printf(CRED"TODO\n"RESET);
+	printf(CBOLD CRED"Standart :   xxx (x <= 6 && x > 0\n"RESET);
+	printf(CBOLD CRED"Bévue :      ---\n"RESET);
+	printf(CBOLD CRED"Grelottine : +++\n"RESET);
+	printf(CBOLD CRED"Mise Sirot : ***\n"RESET);
+	printf(CBOLD CRED"Mise Défi :  *+*\n"RESET);
+	printf(CBOLD CRED"Set score :  ...\n"RESET);
+	printf(CBOLD CRED"Civet  :     *-*\n"RESET);
 }
 
 /*!
@@ -43,4 +49,18 @@ void sort(int * d1, int * d2, int * d3)
 		*d2 = *d1 ^ *d2;
 		*d1 = *d1 ^ *d2;
 	}
+}
+
+/*!
+ * \brief return 0 if d is not a dice value ( d < 1 OR d > 6 )
+ * \return 0 : not a dice value / 1 : dice valid value
+ * \param (d : dice value) keybord code
+ */
+int dice(int d)
+{
+	d -= 48;
+	if(d<1 || d>6)
+		return 0;
+	else
+		return 1;
 }

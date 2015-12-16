@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -80,17 +81,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cdc.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Function.  
+<p>Function &amp; Struct.  
 <a href="#details">More...</a></p>
 
 <p><a href="cdc_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdices.html">dices</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">dices structure  <a href="structdices.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0d20b69b0ad703df78459e1033d5c1d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#a0d20b69b0ad703df78459e1033d5c1d4">printHelp</a> ()</td></tr>
@@ -99,17 +107,178 @@ Functions</h2></td></tr>
 <tr class="memitem:a6899d8478514bd284415589e58d1535b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#a6899d8478514bd284415589e58d1535b">dice</a> (int d)</td></tr>
 <tr class="memdesc:a6899d8478514bd284415589e58d1535b"><td class="mdescLeft">&#160;</td><td class="mdescRight">return 0 if d is not a dice value ( d &lt; 1 OR d &gt; 6 )  <a href="#a6899d8478514bd284415589e58d1535b">More...</a><br /></td></tr>
 <tr class="separator:a6899d8478514bd284415589e58d1535b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8896572974b61de581c30c630723762"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#af8896572974b61de581c30c630723762">play</a> (int d1, int d2, int d3)</td></tr>
-<tr class="memdesc:af8896572974b61de581c30c630723762"><td class="mdescLeft">&#160;</td><td class="mdescRight">play round  <a href="#af8896572974b61de581c30c630723762">More...</a><br /></td></tr>
-<tr class="separator:af8896572974b61de581c30c630723762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a970ddacf5fd089524ba503b83353badf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#a970ddacf5fd089524ba503b83353badf">sort</a> (int *d1, int *d2, int *d3)</td></tr>
 <tr class="memdesc:a970ddacf5fd089524ba503b83353badf"><td class="mdescLeft">&#160;</td><td class="mdescRight">sort 3 pointer to int  <a href="#a970ddacf5fd089524ba503b83353badf">More...</a><br /></td></tr>
 <tr class="separator:a970ddacf5fd089524ba503b83353badf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8896572974b61de581c30c630723762"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#af8896572974b61de581c30c630723762">play</a> (int d1, int d2, int d3)</td></tr>
+<tr class="memdesc:af8896572974b61de581c30c630723762"><td class="mdescLeft">&#160;</td><td class="mdescRight">play round  <a href="#af8896572974b61de581c30c630723762">More...</a><br /></td></tr>
+<tr class="separator:af8896572974b61de581c30c630723762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacffac0ba275d2fef572e3b1698d907b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#aacffac0ba275d2fef572e3b1698d907b">chouette</a> (<a class="el" href="structdices.html">dices</a> d)</td></tr>
+<tr class="memdesc:aacffac0ba275d2fef572e3b1698d907b"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the score  <a href="#aacffac0ba275d2fef572e3b1698d907b">More...</a><br /></td></tr>
+<tr class="separator:aacffac0ba275d2fef572e3b1698d907b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99fa78cab97dd37d9e07a42aa2687483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#a99fa78cab97dd37d9e07a42aa2687483">cul_de_chouette</a> (<a class="el" href="structdices.html">dices</a> d)</td></tr>
+<tr class="memdesc:a99fa78cab97dd37d9e07a42aa2687483"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the score  <a href="#a99fa78cab97dd37d9e07a42aa2687483">More...</a><br /></td></tr>
+<tr class="separator:a99fa78cab97dd37d9e07a42aa2687483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60d8caa341a370e3de80238d48f628a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#ac60d8caa341a370e3de80238d48f628a">chouette_velute</a> (<a class="el" href="structdices.html">dices</a> d)</td></tr>
+<tr class="memdesc:ac60d8caa341a370e3de80238d48f628a"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the score  <a href="#ac60d8caa341a370e3de80238d48f628a">More...</a><br /></td></tr>
+<tr class="separator:ac60d8caa341a370e3de80238d48f628a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af95dadede3eb6e58cd352e9918c3c3ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#af95dadede3eb6e58cd352e9918c3c3ce">chouette_velute_value</a> (<a class="el" href="structdices.html">dices</a> d, int c)</td></tr>
+<tr class="memdesc:af95dadede3eb6e58cd352e9918c3c3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the score  <a href="#af95dadede3eb6e58cd352e9918c3c3ce">More...</a><br /></td></tr>
+<tr class="separator:af95dadede3eb6e58cd352e9918c3c3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebc38464ce4de8d0965a891abe9439c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#a0ebc38464ce4de8d0965a891abe9439c">velute</a> (<a class="el" href="structdices.html">dices</a> d)</td></tr>
+<tr class="memdesc:a0ebc38464ce4de8d0965a891abe9439c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the score  <a href="#a0ebc38464ce4de8d0965a891abe9439c">More...</a><br /></td></tr>
+<tr class="separator:a0ebc38464ce4de8d0965a891abe9439c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe63e8985c681d3bbe6b2732d3e052d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#adbe63e8985c681d3bbe6b2732d3e052d">suite</a> (<a class="el" href="structdices.html">dices</a> d)</td></tr>
+<tr class="memdesc:adbe63e8985c681d3bbe6b2732d3e052d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the score  <a href="#adbe63e8985c681d3bbe6b2732d3e052d">More...</a><br /></td></tr>
+<tr class="separator:adbe63e8985c681d3bbe6b2732d3e052d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344942b99114ef7a3b1e552aa6c66696"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#a344942b99114ef7a3b1e552aa6c66696">soufflette</a> (<a class="el" href="structdices.html">dices</a> d)</td></tr>
+<tr class="memdesc:a344942b99114ef7a3b1e552aa6c66696"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the score  <a href="#a344942b99114ef7a3b1e552aa6c66696">More...</a><br /></td></tr>
+<tr class="separator:a344942b99114ef7a3b1e552aa6c66696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996786d58d1d712619ecd3998e891c48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#a996786d58d1d712619ecd3998e891c48">grelottine</a> ()</td></tr>
+<tr class="memdesc:a996786d58d1d712619ecd3998e891c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">grelottine  <a href="#a996786d58d1d712619ecd3998e891c48">More...</a><br /></td></tr>
+<tr class="separator:a996786d58d1d712619ecd3998e891c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37d7eadf48428c37fdb90a0532c9306"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#ae37d7eadf48428c37fdb90a0532c9306">mise_s</a> ()</td></tr>
+<tr class="memdesc:ae37d7eadf48428c37fdb90a0532c9306"><td class="mdescLeft">&#160;</td><td class="mdescRight">mise sur un sirotage  <a href="#ae37d7eadf48428c37fdb90a0532c9306">More...</a><br /></td></tr>
+<tr class="separator:ae37d7eadf48428c37fdb90a0532c9306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d7911ca3f8b7112a8949ef74e08d32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#ad4d7911ca3f8b7112a8949ef74e08d32">mise_d</a> ()</td></tr>
+<tr class="memdesc:ad4d7911ca3f8b7112a8949ef74e08d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">mise sur un défi  <a href="#ad4d7911ca3f8b7112a8949ef74e08d32">More...</a><br /></td></tr>
+<tr class="separator:ad4d7911ca3f8b7112a8949ef74e08d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e613af56f1666598e9d67abb633d380"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdc_8h.html#a8e613af56f1666598e9d67abb633d380">civet</a> ()</td></tr>
+<tr class="memdesc:a8e613af56f1666598e9d67abb633d380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Civet.  <a href="#a8e613af56f1666598e9d67abb633d380">More...</a><br /></td></tr>
+<tr class="separator:a8e613af56f1666598e9d67abb633d380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Function. </p>
+<div class="textblock"><p>Function &amp; Struct. </p>
 <dl class="section author"><dt>Author</dt><dd>Meyer Cyril </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aacffac0ba275d2fef572e3b1698d907b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int chouette </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdices.html">dices</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the score </p>
+<dl class="section return"><dt>Returns</dt><dd>score (0 if not a chouette) </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dices</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac60d8caa341a370e3de80238d48f628a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int chouette_velute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdices.html">dices</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the score </p>
+<dl class="section return"><dt>Returns</dt><dd>score (-10000 if not a chouette velute) </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dices</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af95dadede3eb6e58cd352e9918c3c3ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int chouette_velute_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdices.html">dices</a>&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the score </p>
+<dl class="section return"><dt>Returns</dt><dd>score </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dices</td><td>(it's a chouette velute) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e613af56f1666598e9d67abb633d380"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int civet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Civet. </p>
+<dl class="section return"><dt>Returns</dt><dd>score </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a99fa78cab97dd37d9e07a42aa2687483"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cul_de_chouette </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdices.html">dices</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the score </p>
+<dl class="section return"><dt>Returns</dt><dd>score (0 if not a cul de chouette) </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dices</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a6899d8478514bd284415589e58d1535b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -128,10 +297,64 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 : not a dice value / 1 : dice valid value </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">(d</td><td>: dice value) </td></tr>
+    <tr><td class="paramname">(d</td><td>: dice value) keybord code </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a996786d58d1d712619ecd3998e891c48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int grelottine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>grelottine </p>
+<dl class="section return"><dt>Returns</dt><dd>score </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad4d7911ca3f8b7112a8949ef74e08d32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mise_d </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mise sur un défi </p>
+<dl class="section return"><dt>Returns</dt><dd>score </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae37d7eadf48428c37fdb90a0532c9306"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mise_s </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mise sur un sirotage </p>
+<dl class="section return"><dt>Returns</dt><dd>score </dd></dl>
 
 </div>
 </div>
@@ -228,6 +451,81 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">the</td><td>3 pointer to int value switch value without temporary value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a344942b99114ef7a3b1e552aa6c66696"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int soufflette </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdices.html">dices</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the score </p>
+<dl class="section return"><dt>Returns</dt><dd>score (0 if not a soufflette) </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dices</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adbe63e8985c681d3bbe6b2732d3e052d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int suite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdices.html">dices</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the score </p>
+<dl class="section return"><dt>Returns</dt><dd>score (0 if not a suite) </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dices</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ebc38464ce4de8d0965a891abe9439c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int velute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdices.html">dices</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the score </p>
+<dl class="section return"><dt>Returns</dt><dd>score (0 if not a velute) </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dices</td><td></td></tr>
   </table>
   </dd>
 </dl>
