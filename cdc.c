@@ -24,15 +24,33 @@
 
 int main(int argc, char ** argv)
 {
-	// Create and init vars
+	// Welcome Message
 	
+	printf(CGRN CBOLD);
+	printf("╔══════════════════╗\n");
+	printf("║                  ║\n");
+	printf("║   Meyer Cyril    ║\n");
+	printf("║                  ║\n");
+	printf("║     Cul de       ║\n");
+	printf("║     Chouette     ║\n");
+	printf("║                  ║\n");
+	printf("╠══════════╦═══════╣\n");
+	printf("║   2015   ║ V 1.0 ║\n");
+	printf("╚══════════╩═══════╝\n");
+	printf(RESET);
+	
+	// Create and init vars
 	int score = 0;			// Score player
 	int d1, d2, d3;			// Dice 1,2,3
-	int round = 0;
-	int defi = 0;
+	int round = 0;			// Round score
+	int defi = 0;			// Flag defi
 	
 	if(argc > 1)
 	{
+		printf("usage : %s <X>\n", argv[0]);
+		printf("X:string && \"-h\" print help\n");
+		printf("X:int set score\n");
+		
 		if(strcmp(argv[1], "-h") == 0)
 			printHelp();
 		else
@@ -42,13 +60,13 @@ int main(int argc, char ** argv)
 	while(score < 343 && score > -343)
 	{
 		// Asking state
-		d1 = getchar();	// Dice 1
+		while((d1 = getchar()) == '\n');	// Dice 1
 		d2 = getchar();	// Dice 2
 		d3 = getchar();	// Dice 3
 		getchar();	    // ENTER
 		
 		// Printing
-		printf("Dice 1 : %d\nDice 2 : %d\nDice 3 : %d\n",d1,d2,d3);
+		// printf("Dice 1 : %d\nDice 2 : %d\nDice 3 : %d\n",d1,d2,d3);
 		
 		if(dice(d1) && dice(d2) && dice(d3))
 		{
@@ -102,7 +120,7 @@ int main(int argc, char ** argv)
 		}
 		else
 			score += round;
-			
+		// Print State
 		printf(CBOLD CYEL"Score : %d"RESET"\n",score);
 	}
 	

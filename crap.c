@@ -14,13 +14,17 @@
  */
 void printHelp()
 {
-	printf(CBOLD CRED"Standart :   xxx (x <= 6 && x > 0\n"RESET);
-	printf(CBOLD CRED"Bévue :      ---\n"RESET);
-	printf(CBOLD CRED"Grelottine : +++\n"RESET);
-	printf(CBOLD CRED"Mise Sirot : ***\n"RESET);
-	printf(CBOLD CRED"Mise Défi :  *+*\n"RESET);
-	printf(CBOLD CRED"Set score :  ...\n"RESET);
-	printf(CBOLD CRED"Civet  :     *-*\n"RESET);
+	printf(CYEL CBOLD);
+	printf("╔═════════════════════════════════════╗\n");
+	printf("║ Standart :   xxx (x <= 6 && x > 0)  ║\n");
+	printf("║ Bévue :      ---                    ║\n");
+	printf("║ Grelottine : +++                    ║\n");
+	printf("║ Mise Sirot : ***                    ║\n");
+	printf("║ Mise Défi :  *+*                    ║\n");
+	printf("║ Set score :  ...                    ║\n");
+	printf("║ Civet  :     *-*                    ║\n");
+	printf("╚═════════════════════════════════════╝\n");
+	printf(RESET);
 }
 
 /*!

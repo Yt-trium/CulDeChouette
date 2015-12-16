@@ -32,12 +32,12 @@ int play(int d1, int d2, int d3)
 	if((r = chouette_velute(d)) != -10000)
 		return r;
 	
-	if((r = velute(d)) != 0)
-		return r;
-	
 	if((r = suite(d)) != 0)
 		return r;
 		
+	if((r = velute(d)) != 0)
+		return r;
+	
 	if((r = chouette(d)) != 0)
 		return r;
 		
@@ -141,8 +141,13 @@ int velute(dices d)
 int suite(dices d)
 {
 	int x = 0;
+	int r = 0;
 	if(d.d3-2 == d.d1 && d.d3-1 == d.d2)
 	{
+		if(d.d1 == 1)	// 1-2-3 (velute)
+		{
+			r += 18;
+		}
 		printf(CBOLD CGRN"Suite"RESET"\n");
 		printf(CBOLD"- Grelotte ça picote -"RESET"\n");
 		printf(CBOLD"- Sans fin est la moisissure des bières bretonnes -"RESET"\n");
@@ -151,11 +156,11 @@ int suite(dices d)
 		
 		if(x == 1)
 		{
-			return -10;
+			r -= 10;
 		}
 	}
 	
-	return 0;
+	return r;
 }
 
 /*!
