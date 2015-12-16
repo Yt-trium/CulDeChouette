@@ -7,7 +7,7 @@
 // ------------------------------
 /*!
  * \file cdc.c
- * \brief Main Program.
+ * \brief Main Program
  * \author Meyer Cyril
  * \version 1.0
  * Cul De Chouette

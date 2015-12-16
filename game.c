@@ -1,6 +1,6 @@
 /*!
  * \file game.c
- * \brief Crap Function
+ * \brief Game Function
  * \author Meyer Cyril
  */
 
