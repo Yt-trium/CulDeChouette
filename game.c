@@ -127,7 +127,7 @@ int velute(dices d)
 	if(d.d1 + d.d2 == d.d3)
 	{
 		printf(CBOLD CGRN"Velute de %d"RESET"\n",d.d3);
-		return 2*d.d3;
+		return 2*d.d3*d.d3;
 	}
 	else
 		return 0;

@@ -44,21 +44,28 @@ int main(int argc, char ** argv)
 	int d1, d2, d3;			// Dice 1,2,3
 	int round = 0;			// Round score
 	int defi = 0;			// Flag defi
+	int help = 0;			// Flag Help
 	
 	if(argc > 1)
 	{
 		printf("usage : %s <X>\n", argv[0]);
 		printf("X:string && \"-h\" print help\n");
+		printf("X:string && \"-H\" print help each round\n");
 		printf("X:int set score\n");
 		
 		if(strcmp(argv[1], "-h") == 0)
 			printHelp();
+		else if(strcmp(argv[1], "-H") == 0)
+			help = 1;
 		else
 			score = atoi(argv[1]);
 	}
 	
 	while(score < 343 && score > -343)
 	{
+		if(help)
+			printHelp();
+			
 		// Asking state
 		while((d1 = getchar()) == '\n');	// Dice 1
 		d2 = getchar();	// Dice 2
@@ -104,6 +111,7 @@ int main(int argc, char ** argv)
 		}
 		else if(d1 == '.')
 		{
+			round = 0;
 			printf("Set score : ");
 			scanf("%d",&score);
 		}
@@ -120,8 +128,13 @@ int main(int argc, char ** argv)
 		}
 		else
 			score += round;
+		
 		// Print State
-		printf(CBOLD CYEL"Score : %d"RESET"\n",score);
+		printf(CBOLD CYEL);
+		printf("╔══════════════════╗\n");
+		printf("║   Score : %d\t   ║\n",score);
+		printf("╚══════════════════╝\n");
+		printf(RESET);
 	}
 	
 	printf(CBOLD CRED"----- FIN -----"RESET"\n");
